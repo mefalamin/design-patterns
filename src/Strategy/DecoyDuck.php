@@ -6,19 +6,14 @@ namespace DesignPatterns\Strategy;
 
 class DecoyDuck extends Duck
 {
+    public function __construct()
+    {
+        $this->flyBehaviour = new FlyNoWay();
+        $this->quackBehavior = new Mute();
+    }
 
     public function display()
     {
         echo 'displaying decoy duck';
-    }
-
-    public function fly()
-    {
-        echo 'I can\'t fly';
-    }
-
-    public function quack()
-    {
-        echo 'I can\'t quack';
     }
 }

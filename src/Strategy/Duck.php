@@ -6,20 +6,43 @@ namespace DesignPatterns\Strategy;
 
 abstract class Duck
 {
-    public function quack()
+
+    protected FlyBehavior $flyBehaviour;
+    protected QuakeBehavior $quackBehavior;
+
+
+
+    abstract public function display();
+
+    /**
+     * @param FlyBehavior $flyBehaviour
+     */
+    public function setFlyBehaviour(FlyBehavior $flyBehaviour): void
     {
-        echo 'quack!!' . PHP_EOL;
+        $this->flyBehaviour = $flyBehaviour;
     }
 
-    public function fly()
+    /**
+     * @param QuakeBehavior $quackBehavior
+     */
+    public function setQuackBehavior(QuakeBehavior $quackBehavior): void
     {
-        echo 'flying' . PHP_EOL;
+        $this->quackBehavior = $quackBehavior;
     }
 
-    public function swim()
+    public function swim(): void
     {
         echo 'swim' . PHP_EOL;
     }
 
-    abstract public function display();
+    public function performFly(): void
+    {
+        $this->flyBehaviour->fly();
+    }
+
+    public function performQuack(): void
+    {
+        $this->quackBehavior->quake();
+    }
+
 }
