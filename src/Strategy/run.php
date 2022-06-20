@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPatterns\Strategy;
 
 require '../../vendor/autoload.php';
