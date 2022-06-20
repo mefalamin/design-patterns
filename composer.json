@@ -1,0 +1,18 @@
+{
+    "name": "alamin/design_pattern",
+    "description": "Some useful design patterns",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ebne Faiz Al-Amin"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DesignPatterns\\" : "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
