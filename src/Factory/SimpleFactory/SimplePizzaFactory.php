@@ -1,5 +1,5 @@
 <?php
-namespace DesignPatterns\Factory;
+namespace DesignPatterns\Factory\SimpleFactory;
 
 
 class SimplePizzaFactory
@@ -20,6 +20,7 @@ class SimplePizzaFactory
         $pizza->bake();
         $pizza->cut();
         $pizza->box();
+        echo $pizza;
 
         return $pizza;
     }

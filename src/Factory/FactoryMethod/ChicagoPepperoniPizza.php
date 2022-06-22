@@ -1,16 +1,16 @@
 <?php
 
 
-namespace DesignPatterns\Factory;
+namespace DesignPatterns\Factory\FactoryMethod;
 
 
-class PepperoniPizza extends Pizza
+class ChicagoPepperoniPizza extends Pizza
 {
     public function __construct()
     {
-        $this->name = "NY Style Pepperoni Pizza";
-		$this->dough = "Thin Crust Dough";
-		$this->sauce = "Marinara Sauce";
+        $this->name = "Chicago Pepperoni Pizza";
+		$this->dough = "Thick Crust Dough";
+		$this->sauce = "Chilli Sauce";
 
 		$this->toppings [] = "Grated Reggiano Cheese";
 		$this->toppings [] = "Sliced Pepperoni";

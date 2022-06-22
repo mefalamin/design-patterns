@@ -1,5 +1,5 @@
 <?php
-namespace DesignPatterns\Factory;
+namespace DesignPatterns\Factory\SimpleFactory;
 
 class VeggiePizza extends Pizza
 {

@@ -1,5 +1,5 @@
 <?php
-namespace DesignPatterns\Factory;
+namespace DesignPatterns\Factory\SimpleFactory;
 
 use ReflectionClass;
 
@@ -33,6 +33,19 @@ abstract class Pizza
     public function box()
     {
         echo "boxing ". self::getName()  . PHP_EOL;
+    }
+
+    public function __toString(): string
+    {
+       $details = '---------' . self::getName() . '-------------' . PHP_EOL;
+       $details .= 'dough ' . $this->dough . PHP_EOL;
+       $details .= 'sauce ' . $this->sauce . PHP_EOL;
+        foreach ($this->toppings as $topping) {
+            $details .= $topping . PHP_EOL;
+       }
+
+        $details .= '--------- deliverying-' . self::getName() . '-------------' . PHP_EOL;
+       return $details;
     }
 
 
