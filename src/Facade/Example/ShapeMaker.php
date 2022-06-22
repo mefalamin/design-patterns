@@ -1,9 +1,7 @@
 <?php 
 
-require_once 'ShapeInterface.php';
-require_once 'Circle.php';
-require_once 'Rectangle.php';
-require_once 'Square.php';
+namespace DesignPatterns\Facade\Example;
+
 
 class ShapeMaker{
 

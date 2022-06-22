@@ -1,6 +1,7 @@
-<?php 
+<?php
 
-require_once  'ShapeInterface.php';
+namespace DesignPatterns\Facade\Example;
+
 
 class Square implements ShapeInterface
 {

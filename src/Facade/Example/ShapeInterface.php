@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+namespace DesignPatterns\Facade\Example;
 
 interface ShapeInterface{
 

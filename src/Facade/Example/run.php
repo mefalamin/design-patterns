@@ -1,6 +1,8 @@
-<?php 
+<?php
 
-require_once 'ShapeMaker.php';
+use DesignPatterns\Facade\Example\ShapeMaker;
+
+require '../../../vendor/autoload.php';
 
 
 $shapMaker = new ShapeMaker();
