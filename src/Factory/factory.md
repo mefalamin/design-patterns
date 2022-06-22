@@ -14,3 +14,7 @@ for making pizza.
  new york. Individual stores have their own style pizza. For this we can 
 apply the factory method pattern where each store call its 
  factory implementation method.
+
+In factory pattern we hide the complex implementation from the client 
+and return the client only the output, hence factory class or method handle the 
+jobs for us.
