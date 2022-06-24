@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\Strategy;
 
-require '../../vendor/autoload.php';
+require_once '../../vendor/autoload.php';
 
 $simulator = new DuckSimulator();
 

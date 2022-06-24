@@ -3,7 +3,7 @@
 use DesignPatterns\Factory\FactoryMethod\ChicagoPizzaStore;
 use DesignPatterns\Factory\FactoryMethod\NYPizzaStore;
 
-require '../../../vendor/autoload.php';
+require_once '../../../vendor/autoload.php';
 
 $newyork_store = new NYPizzaStore();
 $chicago_store = new ChicagoPizzaStore();

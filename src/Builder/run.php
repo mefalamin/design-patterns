@@ -2,7 +2,7 @@
 
 use DesignPatterns\Builder\BurgerBuilder;
 
-require '../../vendor/autoload.php';
+require_once '../../vendor/autoload.php';
 
 
 /* @var $burger BurgerBuilder */

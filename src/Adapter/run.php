@@ -5,7 +5,7 @@ use DesignPatterns\Adapter\Hunter;
 use DesignPatterns\Adapter\WildDog;
 use DesignPatterns\Adapter\WildDogAdapter;
 
-require '../../vendor/autoload.php';
+require_once('../../vendor/autoload.php');
 
 $hunter = new Hunter(new AsianLion());
 $hunter->hunt();

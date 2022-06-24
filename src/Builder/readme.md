@@ -6,4 +6,4 @@ we need to add more parameters in future then it becomes difficult to manange
 the constructor. This is called telescope anti-pattern.
 
 Using the builder class we can make that object and without polluting the 
-constructor of the object class.
+constructor of the object class.Its a creational design pattern.
