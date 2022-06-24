@@ -12,4 +12,3 @@ $shapMaker->drawRectangle();
 $shapMaker->drawSquare();
 
 
-?>
